@@ -1,0 +1,15 @@
+/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m: In function '__-[Controller startSearch:withQuery:]_block_invoke_1':
+/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:69: warning: invalid receiver type 'CFTypeRef'
+/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:69: warning: initialization from incompatible pointer type
+/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:70: warning: invalid receiver type 'CFTypeRef'
+/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:70: warning: initialization from incompatible pointer type
+/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m: In function '-[Controller getAttribute:forMDItem:]':
+/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:136: warning: passing argument 2 of 'MDItemCopyAttribute' from incompatible pointer type
+/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:142: warning: 'NSObject' may not respond to '-objectAtIndex:'
+/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:142: warning: (Messages without a matching method signature
+/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:142: warning: will be assumed to return 'id' and accept
+/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:142: warning: '...' as arguments.)
+/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:145: warning: incompatible Objective-C types returning 'struct NSObject *', expected 'struct NSString *'
+/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m: At top level:
+/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:148: warning: incomplete implementation of class 'Controller'
+/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:148: warning: method definition for '-getPathAtIndex:' not found
