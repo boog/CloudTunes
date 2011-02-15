@@ -10,18 +10,19 @@
 @import "LibraryDataSource.j"
 @import "MediaPlayer.j"
 
-SERVER = @"http://emma.baileycarlson.net:8124/music/"; // @"http://emma.baileycarlson.net:8124/music/";
+SERVER = @"/music";// @"http://emma.baileycarlson.net:8124/music/";
 
 @implementation AppController : CPObject
 {
-    @outlet CPWindow    theWindow; //this "outlet" is connected automatically by the Cib
-    @outlet CPScrollView scrollView;
-    @outlet CPTableView tableView;
-    @outlet CPSearchField searchField;
-    @outlet CPSlider    volumeSlider;
-    @outlet CPTextField nowPlayingLabel;
-    LibraryDataSource   tableDataSource;
-    MediaPlayer         mediaPlayer;
+    @outlet CPWindow    	theWindow; 		//this "outlet" is connected automatically by the Cib
+    @outlet CPScrollView 	scrollView;
+    @outlet CPTableView 	tableView;
+    @outlet CPSearchField 	searchField;
+    @outlet CPSlider    	volumeSlider;
+	@outlet CPSlider		seekSlider; 	// Slider indicates current position of song
+    @outlet CPTextField 	nowPlayingLabel;
+    LibraryDataSource   	tableDataSource; // Responsible for searching and filling list of songs
+    MediaPlayer         	mediaPlayer; 	// Plays the songs with audio tag, notifies of player events
 }
 
 - (void)applicationDidFinishLaunching:(CPNotification)aNotification
@@ -34,6 +35,7 @@ SERVER = @"http://emma.baileycarlson.net:8124/music/"; // @"http://emma.baileyca
 
     // Initalize player
     mediaPlayer = [[MediaPlayer alloc] init];
+	[mediaPlayer setDelegate:self]; // Notify app of player events
 }
 
 - (void)awakeFromCib
@@ -67,6 +69,11 @@ SERVER = @"http://emma.baileycarlson.net:8124/music/"; // @"http://emma.baileyca
     [tableView addTableColumn:titleColumn];
 }
 
+- (CPString)selectedResource
+{
+	return SERVER + @"?q=" + escape([searchField objectValue]) + "&i=" + [tableDataSource valueForField:@"id" atRow:[tableView selectedRow]];
+}
+
 - (void)volumeDidChange:(id)sender
 {
     [mediaPlayer setVolume:[volumeSlider doubleValue]/100];
@@ -79,16 +86,53 @@ SERVER = @"http://emma.baileycarlson.net:8124/music/"; // @"http://emma.baileyca
 
 - (@action)didPlayPauseClick:(id)sender
 {
-    [mediaPlayer togglePlaying];
+	if (![mediaPlayer isPlaying])
+	{
+		// No song playing, play selected item
+		[self didSelectItemToPlay:nil];
+	}
+	else
+	{
+	    [mediaPlayer togglePlaying];
+	}
+}
+
+- (@action)nextSongClick:(id)sender
+{
+	CPLog(@"Beginning next song in playlist");
+	[tableView selectRowIndexes:[CPIndexSet indexSetWithIndex:[tableView selectedRow] + 1] byExtendingSelection:NO];
+	[self didSelectItemToPlay:sender];
 }
 
 - (void)didSelectItemToPlay:(id)sender
 {
-    CPLog(@"Song did began play");
     var selectedRowIndex = [tableView selectedRow];
     var songTitle = [tableDataSource valueForField:@"Title" atRow:selectedRowIndex];
-    [nowPlayingLabel setObjectValue:@"Now Playing: " + songTitle];
-    [mediaPlayer playSong:SERVER + @"?q=" + escape([searchField objectValue]) + "&i=" + [tableDataSource valueForField:@"id" atRow:selectedRowIndex]];
+    [nowPlayingLabel setObjectValue:@"Playing: " + songTitle];
+    [mediaPlayer playSong:[self selectedResource]];
 }
+
+- (void)mediaPlayer:(id)player didFinishPlaying:(CPString)resource
+{
+	[self nextSongClick:player];
+}
+
+- (void)mediaPlayer:(id)player currentPositionDidUpdate:(int)seconds
+{
+	var selectedRowIndex = [tableView selectedRow];
+    var songTitle = [tableDataSource valueForField:@"Title" atRow:selectedRowIndex];
+	var currentMin = Math.floor(seconds / 60);
+	var currentSec = Math.floor(seconds - currentMin * 60);
+	var durationMin = Math.floor([player duration] / 60);
+	var durationSec = Math.floor([player duration] - durationMin * 60);
+	var currentTime = [CPString stringWithFormat:@"%d:%02d", currentMin, currentSec];
+	var durationTime = [CPString stringWithFormat:@"%d:%02d", durationMin, durationSec];
+	[nowPlayingLabel setObjectValue:@"Playing: " + songTitle + " " + currentTime + "/" + durationTime];
+	[seekSlider setObjectValue:seconds / [player duration] * 100];
+	[seekSlider setNeedsDisplay:YES];
+	[nowPlayingLabel setWantsLayer:YES];
+}
+
+
 
 @end

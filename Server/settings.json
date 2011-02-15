@@ -2,7 +2,7 @@
     "port" : 8124,
 
     "default_host" : {
-        "root" : "/Library/WebServer/Documents/www"
+        "root" : "../Client/"
     }
 
 }

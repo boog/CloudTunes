@@ -1,4 +1,4 @@
-@STATIC;1.0;I;21;Foundation/CPObject.jt;3547;
+@STATIC;1.0;I;21;Foundation/CPObject.jt;2858;
 
 
 objj_executeFile("Foundation/CPObject.j", NO);
@@ -6,29 +6,21 @@ objj_executeFile("Foundation/CPObject.j", NO);
 {var the_class = objj_allocateClassPair(CPObject, "LibraryDataSource"),
 meta_class = the_class.isa;class_addIvars(the_class, [new objj_ivar("jsonData"), new objj_ivar("libraryList"), new objj_ivar("filteredList"), new objj_ivar("tableView")]);
 objj_registerClassPair(the_class);
-class_addMethods(the_class, [new objj_method(sel_getUid("init"), function $LibraryDataSource__init(self, _cmd)
+class_addMethods(the_class, [new objj_method(sel_getUid("reloadLibraryWithQuery:"), function $LibraryDataSource__reloadLibraryWithQuery_(self, _cmd, query)
 { with(self)
 {
-    if (self = objj_msgSendSuper({ receiver:self, super_class:objj_getClass("LibraryDataSource").super_class }, "init"))
-    {
-        jsonData = "";
-    }
-    return self;
-}
-},["id"]), new objj_method(sel_getUid("fillLibrary"), function $LibraryDataSource__fillLibrary(self, _cmd)
-{ with(self)
-{
-    var request = objj_msgSend(objj_msgSend(CPURLRequest, "alloc"), "initWithURL:", SERVER);
+    jsonData = "";
+    var request = objj_msgSend(objj_msgSend(CPURLRequest, "alloc"), "initWithURL:", SERVER + "?q=" + escape(query));
     objj_msgSend(request, "setHTTPMethod:", "GET");
 
     var urlConnection = objj_msgSend(CPURLConnection, "connectionWithRequest:delegate:", request, self);
     objj_msgSend(urlConnection, "start");
 }
-},["void"]), new objj_method(sel_getUid("valueForField:atRow:"), function $LibraryDataSource__valueForField_atRow_(self, _cmd, field, rowIndex)
+},["void","CPString"]), new objj_method(sel_getUid("valueForField:atRow:"), function $LibraryDataSource__valueForField_atRow_(self, _cmd, field, rowIndex)
 { with(self)
 {
     var item = objj_msgSend(libraryList, "objectAtIndex:", rowIndex);
-    return item[field];
+    return objj_msgSend(item, "objectForKey:", field);
 }
 },["CPString","CPString","int"]), new objj_method(sel_getUid("connection:didReceiveData:"), function $LibraryDataSource__connection_didReceiveData_(self, _cmd, connection, data)
 { with(self)
@@ -44,7 +36,7 @@ class_addMethods(the_class, [new objj_method(sel_getUid("init"), function $Libra
     for (i=0; i<jsonObject.length; i++)
     {
         var testDictionary = objj_msgSend(CPDictionary, "dictionaryWithJSObject:recursively:", jsonObject[i], YES);
-        objj_msgSend(workingArray, "addObject:", testDictionary);
+        objj_msgSend(libraryList, "addObject:", testDictionary);
     }
 
     objj_msgSend(tableView, "reloadData");
@@ -63,15 +55,10 @@ class_addMethods(the_class, [new objj_method(sel_getUid("init"), function $Libra
 },["id","id","CPTableColumn","int"]), new objj_method(sel_getUid("tableView:sortDescriptorsDidChange:"), function $LibraryDataSource__tableView_sortDescriptorsDidChange_(self, _cmd, tv, oldDescriptors)
 { with(self)
 {
-    objj_msgSend(libraryList, "sortUsingDescriptors:", objj_msgSend(tv, "sortDescriptors"));
-    objj_msgSend(tv, "reloadData");
+    CPLog("Sorting with descriptor: %@", objj_msgSend(tv, "sortDescriptors"));
+
+
 }
-},["void","CPTableView","CPArray"]), new objj_method(sel_getUid("tableView:didClickTableColumn:"), function $LibraryDataSource__tableView_didClickTableColumn_(self, _cmd, tv, tc)
-{ with(self)
-{
-    objj_msgSend(tc, "setSortDescriptorPrototype:", objj_msgSend(objj_msgSend(tc, "sortDescriptorPrototype"), "reversedSortDescriptor"));
-    objj_msgSend(tv, "setSortDescriptors:", objj_msgSend(CPArray, "arrayWithObject:", objj_msgSend(tc, "sortDescriptorPrototype")));
-}
-},["void","CPTableView","CPTableColumn"])]);
+},["void","CPTableView","CPArray"])]);
 }
 

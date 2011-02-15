@@ -1,12 +1,12 @@
 TMDAudioJSON
 v7
 r0
-t315130196.651879
+t319426350.772010
 cCheck dependencies
-cProcessPCH /var/folders/p6/p6mqS3hSH0mY3F8k7n0u5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MDAudioJSON_Prefix-dmtbsqelzuvvrvdeosqiadmetqpx/MDAudioJSON_Prefix.pch.gch MDAudioJSON_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/MDAudioJSON.build/Debug/MDAudioJSON.build/Objects-normal/x86_64/MDAudioJSON.o /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/MDAudioJSON.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/MDAudioJSON.build/Debug/MDAudioJSON.build/Objects-normal/x86_64/Controller.o /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/Debug/MDAudioJSON normal x86_64
+cProcessPCH /var/folders/p6/p6mqS3hSH0mY3F8k7n0u5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MDAudioJSON_Prefix-gmslwnazfyktrqfyrxvjdkvfdeoj/MDAudioJSON_Prefix.pch.gch MDAudioJSON_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MDAudioJSON.build/Debug/MDAudioJSON.build/Objects-normal/x86_64/MDAudioJSON.o /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/MDAudioJSON.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/MDAudioJSON.build/Debug/MDAudioJSON.build/Objects-normal/x86_64/Controller.o /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/Debug/MDAudioJSON normal x86_64
 cPBXCp /Users/boog/bin/MDAudioJSON build/Debug/MDAudioJSON
 
 N/Developer/SDKs/MacOSX10.6.sdk
@@ -101,17 +101,65 @@ N/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.bu
 t1293437394
 s8900
 
+N/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.h
+c000000004D1555B200000000000001E7
+t1293243826
+s487
+i<Cocoa/Cocoa.h>
+i<CoreServices/CoreServices.h>
+i<YAJL/YAJL.h>
+
+N/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m
+c000000004D1555A90000000000001291
+t1293243817
+s4753
+i"Controller.h"
+
+N/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/MDAudioJSON.m
+c000000004D1849CD00000000000003CE
+t1293437389
+s974
+i<Foundation/Foundation.h>
+i"Controller.h"
+
+N/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/MDAudioJSON_Prefix.pch
+c000000004CFC48C100000000000000A4
+t1291602113
+s164
+i<Foundation/Foundation.h>
+
+N/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/Debug/MDAudioJSON
+t1297733550
+s22232
+
+N/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/Objects-normal/x86_64/Controller.o
+t1297733550
+s30164
+
+N/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/Objects-normal/x86_64/MDAudioJSON.LinkFileList
+c000000004D59D7AA000000000000012D
+t1297733546
+s301
+
+N/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/Objects-normal/x86_64/MDAudioJSON.o
+t1297733550
+s8916
+
 N/Users/boog/bin/MDAudioJSON
-t1293437395
-s22200
+t1297733550
+s22232
 
 N/var/folders/p6/p6mqS3hSH0mY3F8k7n0u5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MDAudioJSON_Prefix-dmtbsqelzuvvrvdeosqiadmetqpx/MDAudioJSON_Prefix.pch.gch
 t1291603484
 s41401104
 
+N/var/folders/p6/p6mqS3hSH0mY3F8k7n0u5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MDAudioJSON_Prefix-gmslwnazfyktrqfyrxvjdkvfdeoj/MDAudioJSON_Prefix.pch.gch
+t1297733549
+s41401104
+
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies315130196#315130196#0(0"0(0#1#0"4300903632#0"0#
+lSLF07#2@18"Check dependencies319426346#319426346#0(0"0(0#1#0"31244212048494624#0"0#
 
 CCompileC build/MDAudioJSON.build/Debug/MDAudioJSON.build/Objects-normal/x86_64/Controller.o /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s314936638.684310
@@ -138,6 +186,31 @@ o/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:142: wa
 o/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:145: warning: incompatible Objective-C types returning 'struct NSObject *', expected 'struct NSString *'
 lSLF07#2@79"Compile /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m314936638#314936638#0(1607"/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m: In function '__-[Controller startSearch:withQuery:]_block_invoke_1':/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:69: warning: invalid receiver type 'CFTypeRef'/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:69: warning: initialization from incompatible pointer type/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:70: warning: invalid receiver type 'CFTypeRef'/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:70: warning: initialization from incompatible pointer type/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m: In function '-[Controller getAttribute:forMDItem:]':/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:136: warning: passing argument 2 of 'MDItemCopyAttribute' from incompatible pointer type/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:142: warning: 'NSObject' may not respond to '-objectAtIndex:'/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:142: warning: (Messages without a matching method signature/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:142: warning: will be assumed to return 'id' and accept/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:142: warning: '...' as arguments.)/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m:145: warning: incompatible Objective-C types returning 'struct NSObject *', expected 'struct NSString *'8(22@33"Invalid receiver type 'CFTypeRef'314936638#142#119#0(6@71"/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m314936617#69#0#69#0#0"0(22@45"Initialization from incompatible pointer type314936638#261#131#0(6@71"/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m314936617#69#0#69#0#45"initialization from incompatible pointer type0(22@33"Invalid receiver type 'CFTypeRef'314936638#392#119#0(6@71"/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m314936617#70#0#70#0#0"0(22@45"Initialization from incompatible pointer type314936638#511#131#0(6@71"/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m314936617#70#0#70#0#45"initialization from incompatible pointer type0(22@74"Passing argument 2 of 'MDItemCopyAttribute' from incompatible pointer type314936638#768#161#0(6@71"/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m314936617#136#0#136#0#56"passing argument * of '*' from incompatible pointer type0(22@47"'NSObject' may not respond to '-objectAtIndex:'314936638#929#134#0(6@71"/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m314936617#142#0#142#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)314936638#1063#132#0(6@71"/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m314936617#142#0#142#0#0"0(22@90"Incompatible Objective-C types returning 'struct NSObject *', expected 'struct NSString *'314936638#1430#177#0(6@71"/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m314936617#145#0#145#0#0"0(0#0#71"/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m4300903632#1762"    cd /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-generated-files.hmap -I/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-own-target-headers.hmap -I/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-all-target-headers.hmap -iquote /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-project-headers.hmap -F/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/Debug -I/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/Debug/include -I/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/DerivedSources/x86_64 -I/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/DerivedSources -include /var/folders/p6/p6mqS3hSH0mY3F8k7n0u5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MDAudioJSON_Prefix-dmtbsqelzuvvrvdeosqiadmetqpx/MDAudioJSON_Prefix.pch -c /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/Controller.m -o /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/Objects-normal/x86_64/Controller.o0#
 
+CCompileC build/MDAudioJSON.build/Debug/MDAudioJSON.build/Objects-normal/x86_64/Controller.o /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s319426349.380322
+e319426350.426008
+r1
+xCompileC
+xbuild/MDAudioJSON.build/Debug/MDAudioJSON.build/Objects-normal/x86_64/Controller.o
+x/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m: In function '__-[Controller startSearch:withQuery:]_block_invoke_1':
+o/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m:69: warning: invalid receiver type 'CFTypeRef'
+o/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m:69: warning: initialization from incompatible pointer type
+o/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m:70: warning: invalid receiver type 'CFTypeRef'
+o/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m:70: warning: initialization from incompatible pointer type
+o/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m: In function '-[Controller getAttribute:forMDItem:]':
+o/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m:136: warning: passing argument 2 of 'MDItemCopyAttribute' from incompatible pointer type
+o/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m:142: warning: 'NSObject' may not respond to '-objectAtIndex:'
+o/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m:142: warning: (Messages without a matching method signature
+o/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m:142: warning: will be assumed to return 'id' and accept
+o/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m:142: warning: '...' as arguments.)
+o/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m:145: warning: incompatible Objective-C types returning 'struct NSObject *', expected 'struct NSString *'
+lSLF07#2@87"Compile /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m319426349#319426350#0(1703"/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m: In function '__-[Controller startSearch:withQuery:]_block_invoke_1':/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m:69: warning: invalid receiver type 'CFTypeRef'/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m:69: warning: initialization from incompatible pointer type/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m:70: warning: invalid receiver type 'CFTypeRef'/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m:70: warning: initialization from incompatible pointer type/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m: In function '-[Controller getAttribute:forMDItem:]':/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m:136: warning: passing argument 2 of 'MDItemCopyAttribute' from incompatible pointer type/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m:142: warning: 'NSObject' may not respond to '-objectAtIndex:'/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m:142: warning: (Messages without a matching method signature/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m:142: warning: will be assumed to return 'id' and accept/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m:142: warning: '...' as arguments.)/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m:145: warning: incompatible Objective-C types returning 'struct NSObject *', expected 'struct NSString *'8(22@33"Invalid receiver type 'CFTypeRef'319426350#150#127#0(6@79"/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m314936617#69#0#69#0#0"0(22@45"Initialization from incompatible pointer type319426350#277#139#0(6@79"/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m314936617#69#0#69#0#45"initialization from incompatible pointer type0(22@33"Invalid receiver type 'CFTypeRef'319426350#416#127#0(6@79"/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m314936617#70#0#70#0#0"0(22@45"Initialization from incompatible pointer type319426350#543#139#0(6@79"/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m314936617#70#0#70#0#45"initialization from incompatible pointer type0(22@74"Passing argument 2 of 'MDItemCopyAttribute' from incompatible pointer type319426350#816#169#0(6@79"/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m314936617#136#0#136#0#56"passing argument * of '*' from incompatible pointer type0(22@47"'NSObject' may not respond to '-objectAtIndex:'319426350#985#142#0(6@79"/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m314936617#142#0#142#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)319426350#1127#140#0(6@79"/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m314936617#142#0#142#0#0"0(22@90"Incompatible Objective-C types returning 'struct NSObject *', expected 'struct NSString *'319426350#1518#185#0(6@79"/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m314936617#145#0#145#0#0"0(0#0#79"/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m4300903632#1850"    cd /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-generated-files.hmap -I/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-own-target-headers.hmap -I/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-all-target-headers.hmap -iquote /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-project-headers.hmap -F/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/Debug -I/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/Debug/include -I/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/DerivedSources/x86_64 -I/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/DerivedSources -include /var/folders/p6/p6mqS3hSH0mY3F8k7n0u5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MDAudioJSON_Prefix-gmslwnazfyktrqfyrxvjdkvfdeoj/MDAudioJSON_Prefix.pch -c /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/Controller.m -o /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/Objects-normal/x86_64/Controller.o0#
+
 CCompileC build/MDAudioJSON.build/Debug/MDAudioJSON.build/Objects-normal/x86_64/MDAudioJSON.o /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/MDAudioJSON.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s315130192.963089
 e315130194.784678
@@ -151,6 +224,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@80"Compile /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/MDAudioJSON.m315130192#315130194#0(0"0(0#0#72"/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/MDAudioJSON.m8386658438684291072#1764"    cd /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-generated-files.hmap -I/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-own-target-headers.hmap -I/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-all-target-headers.hmap -iquote /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-project-headers.hmap -F/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/Debug -I/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/Debug/include -I/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/DerivedSources/x86_64 -I/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/DerivedSources -include /var/folders/p6/p6mqS3hSH0mY3F8k7n0u5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MDAudioJSON_Prefix-dmtbsqelzuvvrvdeosqiadmetqpx/MDAudioJSON_Prefix.pch -c /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/MDAudioJSON.m -o /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/Objects-normal/x86_64/MDAudioJSON.o0#
 
+CCompileC build/MDAudioJSON.build/Debug/MDAudioJSON.build/Objects-normal/x86_64/MDAudioJSON.o /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/MDAudioJSON.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s319426349.379556
+e319426350.244753
+r1
+xCompileC
+xbuild/MDAudioJSON.build/Debug/MDAudioJSON.build/Objects-normal/x86_64/MDAudioJSON.o
+x/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/MDAudioJSON.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@88"Compile /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/MDAudioJSON.m319426349#319426350#0(0"0(0#0#80"/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/MDAudioJSON.m4300903632#1852"    cd /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-generated-files.hmap -I/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-own-target-headers.hmap -I/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-all-target-headers.hmap -iquote /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-project-headers.hmap -F/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/Debug -I/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/Debug/include -I/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/DerivedSources/x86_64 -I/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/DerivedSources -include /var/folders/p6/p6mqS3hSH0mY3F8k7n0u5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MDAudioJSON_Prefix-gmslwnazfyktrqfyrxvjdkvfdeoj/MDAudioJSON_Prefix.pch -c /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/MDAudioJSON.m -o /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/Objects-normal/x86_64/MDAudioJSON.o0#
+
 CLd /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/Debug/MDAudioJSON normal x86_64
 s315130194.784848
 e315130195.897129
@@ -161,14 +247,24 @@ xnormal
 xx86_64
 lSLF07#2@87"Link /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/Debug/MDAudioJSON315130194#315130195#0(0"0(0#0#0"32932993185022032#676"    cd /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/Debug -F/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/Debug -filelist /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/Objects-normal/x86_64/MDAudioJSON.LinkFileList -mmacosx-version-min=10.6 -framework Foundation -framework YAJL -framework CoreServices -o /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/Debug/MDAudioJSON0#
 
+CLd /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/Debug/MDAudioJSON normal x86_64
+s319426350.426078
+e319426350.753498
+r1
+xLd
+x/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/Debug/MDAudioJSON
+xnormal
+xx86_64
+lSLF07#2@95"Link /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/Debug/MDAudioJSON319426350#319426350#0(0"0(0#0#0"29555302059016256#716"    cd /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/Debug -F/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/Debug -filelist /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/Objects-normal/x86_64/MDAudioJSON.LinkFileList -mmacosx-version-min=10.6 -framework Foundation -framework YAJL -framework CoreServices -o /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/Debug/MDAudioJSON0#
+
 CPBXCp /Users/boog/bin/MDAudioJSON build/Debug/MDAudioJSON
-s315130195.897215
-e315130195.929968
+s319426350.753581
+e319426350.771965
 r1
 xPBXCp
 x/Users/boog/bin/MDAudioJSON
 xbuild/Debug/MDAudioJSON
-lSLF07#2@28"Copy build/Debug/MDAudioJSON315130195#315130195#0(0"0(0#0#82"/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/Debug/MDAudioJSON4300903632#313"    cd /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/Debug/MDAudioJSON /Users/boog/bin0#
+lSLF07#2@28"Copy build/Debug/MDAudioJSON319426350#319426350#0(0"0(0#0#90"/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/Debug/MDAudioJSON4300903632#329"    cd /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/Debug/MDAudioJSON /Users/boog/bin0#
 
 CPBXCp build/Debug/Users/boog/bin/MDAudioJSON build/Debug/MDAudioJSON
 s313296284.543340
@@ -200,4 +296,17 @@ xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@33"Precompile MDAudioJSON_Prefix.pch313296282#313296284#0(0"0(0#0#81"/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/MDAudioJSON_Prefix.pch4300903632#1632"    cd /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-generated-files.hmap -I/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-own-target-headers.hmap -I/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-all-target-headers.hmap -iquote /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-project-headers.hmap -F/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/Debug -I/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/Debug/include -I/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/DerivedSources/x86_64 -I/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/DerivedSources -c /Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/MDAudioJSON_Prefix.pch -o /var/folders/p6/p6mqS3hSH0mY3F8k7n0u5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MDAudioJSON_Prefix-dmtbsqelzuvvrvdeosqiadmetqpx/MDAudioJSON_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/p6/p6mqS3hSH0mY3F8k7n0u5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MDAudioJSON_Prefix-gmslwnazfyktrqfyrxvjdkvfdeoj/MDAudioJSON_Prefix.pch.gch MDAudioJSON_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s319426346.479205
+e319426349.379402
+r1
+xProcessPCH
+x/var/folders/p6/p6mqS3hSH0mY3F8k7n0u5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MDAudioJSON_Prefix-gmslwnazfyktrqfyrxvjdkvfdeoj/MDAudioJSON_Prefix.pch.gch
+xMDAudioJSON_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@33"Precompile MDAudioJSON_Prefix.pch319426346#319426349#0(0"0(0#0#89"/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/MDAudioJSON_Prefix.pch8676578743001571328#1712"    cd /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-generated-files.hmap -I/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-own-target-headers.hmap -I/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-all-target-headers.hmap -iquote /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/MDAudioJSON-project-headers.hmap -F/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/Debug -I/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/Debug/include -I/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/DerivedSources/x86_64 -I/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/build/MDAudioJSON.build/Debug/MDAudioJSON.build/DerivedSources -c /Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/MDAudioJSON_Prefix.pch -o /var/folders/p6/p6mqS3hSH0mY3F8k7n0u5k+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/MDAudioJSON_Prefix-gmslwnazfyktrqfyrxvjdkvfdeoj/MDAudioJSON_Prefix.pch.gch0#
 

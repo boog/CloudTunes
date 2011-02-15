@@ -274,9 +274,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
-									<integer>1</integer>
-									<integer>0</integer>
+									<integer>21</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -310,14 +308,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Controller.m</string>
+								<string>MDAudioJSON.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,16 +321,16 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Controller.m</string>
+										<string>MDAudioJSON.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>FBB89FB712B60578006625C2</string>
+										<string>FB1A5977130A174E00448AB4</string>
 										<key>history</key>
 										<array>
 											<string>FB82728A12AC88E4001FA1E3</string>
-											<string>FB82728B12AC88E4001FA1E3</string>
-											<string>FB778CCD12ADC9AC001F0F9C</string>
+											<string>FB1A5975130A174E00448AB4</string>
+											<string>FB1A5976130A174E00448AB4</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -346,16 +342,18 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {995, 652}}</string>
+								<string>{{0, 0}, {995, 642}}</string>
 								<key>RubberWindowFrame</key>
 								<string>12 289 1203 889 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>652pt</string>
+							<string>642pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -366,14 +364,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 657}, {995, 191}}</string>
+								<string>{{0, 647}, {995, 201}}</string>
 								<key>RubberWindowFrame</key>
 								<string>12 289 1203 889 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>191pt</string>
+							<string>201pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -392,9 +390,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>FBB89FB812B60578006625C2</string>
+				<string>FB1A5978130A174E00448AB4</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>FBB89FB912B60578006625C2</string>
+				<string>FB1A5979130A174E00448AB4</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -533,7 +531,7 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>FB82725912AC8181001FA1E3</string>
-		<string>/Users/boog/Documents/Dropbox/Code/Objective-C/MDAudioJSON/MDAudioJSON.xcodeproj</string>
+		<string>/Users/boog/Documents/Dropbox/Code/Projects/CloudTunes/MDAudioJSON/MDAudioJSON.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>12 289 1203 889 0 0 1920 1178 </string>
@@ -613,7 +611,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>FB82725912AC8181001FA1E3</string>
-				<string>FBB89FBA12B60578006625C2</string>
+				<string>FB1A597A130A174E00448AB4</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>

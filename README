@@ -1,0 +1,2 @@
+CloudTunes is a web-based media player utilizing the Cappuccino [cappuccino.org] framework for the frontend and Node.Js [nodejs.org] for the backend. It takes advantage of HTML5 audio and Mac OS X spotlight APIs for automatic media discovery if hosted on a Mac server. It's goal is to facilitate a centralized and web-based method of accessing your music from anywhere.
+
